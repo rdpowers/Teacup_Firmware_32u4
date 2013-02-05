@@ -31,11 +31,11 @@
 
 # MCU_TARGET = atmega168
 # MCU_TARGET = atmega328p
-MCU_TARGET = atmega644p
+#MCU_TARGET = atmega644p
 # MCU_TARGET = atmega1280
 # MCU_TARGET = atmega2560
 # MCU_TARGET = at90usb1287
-# MCU_TARGET = atmega32u4
+ MCU_TARGET = atmega32u4
 
 # CPU clock rate
 F_CPU = 16000000L
@@ -60,8 +60,9 @@ AVRDUDECONF = /etc/avrdude.conf
 #                                                                            #
 ##############################################################################
 
-PROGPORT = /dev/arduino
+#PROGPORT = /dev/arduino
 # PROGPORT = /dev/ttyUSB0
+PROGPORT = /dev/ttyACM0
 
 ##############################################################################
 #                                                                            #
@@ -76,7 +77,7 @@ PROGPORT = /dev/arduino
 #                                                                            #
 ##############################################################################
 
-PROGBAUD = 115200
+PROGBAUD = 57600
 
 ##############################################################################
 #                                                                            #
@@ -84,7 +85,8 @@ PROGBAUD = 115200
 #                                                                            #
 ##############################################################################
 
-PROGID = stk500v2
+#PROGID = stk500v2
+PROGID = avr109
 
 ##############################################################################
 #                                                                            #
